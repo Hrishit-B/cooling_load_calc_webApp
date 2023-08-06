@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Cooling Load Calculator</title>
+  </head>
+  <body>
+    <h1 align="center">Cooling Load Calculator of a Building</h1>
+
+    <form id="form1">
+      <table id="form-table" cellspacing="30">
+        <tr>
+          <td><label for="area">Area in square meters</label></td>
+          <td><input type="number" id="area" name="area" required /></td>
+        </tr>
+        <tr>
+          <td><label for="occupants">Number of occupants</label></td>
+          <td>
+            <input type="number" id="occupants" name="occupants" required />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="type">Type of Building</label></td>
+          <td>
+            <input type="radio" name="type" value="residential" />Residential
+            <input type="radio" name="type" value="commercial" />commercial
+          </td>
+        </tr>
+        <tr>
+          <td><label for="t_outdoor">Outdoor Temperature</label></td>
+          <td>
+            <input type="number" id="t_outdoor" name="t_outdoor" required />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="t_indoor">Desired Indoor Temperature</label></td>
+          <td>
+            <input type="number" id="t_indoor" name="t_indoor" required />
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="2" align="center">
+            <button type="submit">Submit</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+
+    <h5 align="center" id="result">
+      The Sensible Cooling Load of the Building is:
+    </h5>
+    <script src="./app.js"></script>
+  </body>
+</html>
