@@ -37,5 +37,5 @@ form1.addEventListener("submit", function (e) {
 
   document.getElementById(
     "result"
-  ).innerHTML = `The Sensible Cooling Load of the Building is: ${sensibleCoolingLoad}`;
+  ).innerHTML = `The Sensible Cooling Load of the Building is: ${sensibleCoolingLoad} Watts`;
 });
